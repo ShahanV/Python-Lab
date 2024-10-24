@@ -6,9 +6,9 @@ from collections import Counter
 
 # (a)
 text = input("Enter a line of text: ")
-word = text.split()
-set = set(word)
-print("Word occurrences: ", {word:word.count(word) for word in set})
+words = text.split()
+unique_words = set(words)
+print("Word occurrences:", {word: words.count(word) for word in unique_words})
 
 # (b)
 sentence = input("Enter a sentence: ")
